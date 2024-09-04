@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"],
+        .login-container select {
+            width: 100%;
+            padding: 10px 0px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <select id="role">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        <input type="text" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="validateLogin()">Login</button>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const role = document.getElementById('role').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            // Mock credentials
+            const adminCredentials = { email: "admin@example.com", password: "password123" };
+            const userCredentials = { email: "user@example.com", password: "userpassword" };
+    
+            if (role === "admin" && email === adminCredentials.email && password === adminCredentials.password) {
+                alert("Admin login successful!");
+                window.location.href = "admin_dashboard.html";
+            } else if (role === "user" && email === userCredentials.email && password === userCredentials.password) {
+                alert("User login successful!");
+                localStorage.setItem('isLoggedIn', true);
+                localStorage.setItem('username', email); // Store the user's email or username
+                window.location.href = "index.html"; // Redirect to main website
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

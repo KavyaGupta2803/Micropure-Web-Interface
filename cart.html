@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Micropure Healthcare Technologies - Our range includes commercial RO systems, industrial RO systems, domestic RO systems an kitchen appliances.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <title>Cart - Micropure Healthcare Technologies - Ab Milegi Purity Ki Surety</title>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="./assets/logo.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="https://micropure.co.in/brochure/micropure-catalogue-new.pdf" target="_blank">Catalog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="tech.html">Technologies</a></li>
+                <li><a href="cert.html">Certifications</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be injected here by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-total" class="section-p1">
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal-amount">₹0</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total-amount">₹0</td>
+                </tr>
+            </table>
+            <button id="checkout-button">Proceed to Checkout</button>
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Subscription</h4>
+            <p>Register now to get updates on <span>promotions</span> and <span>coupons</span>.</p>
+        </div>
+        <form id="subscribe-form">
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <button class="btn" type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer class="section-p1">
+        <div id="text" class="col">
+            <img src="./assets/logo.png">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Plot No.85 & 86, Block A Kanhaiya Nagar, Nilothi Extn, New Delhi-110041</p>
+            <p><strong>Phone:</strong> +91-99999-70965 / +91-7011-874727</p>
+            <p><strong>Email:</strong> info@micropure.co.in</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/p/Micropure-Health-Care-Technologies-100064024155496/"
+                        target="_blank"><svg class="ico1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/micropurehealthcare?igsh=NGtnbXdjN29mbms4" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Quick Menu</h4>
+            <a href="Shop.html">Commercial RO System</a>
+            <a href="Shop.html">Domestic RO System</a>
+            <a href="Shop.html">Glass Top Gas Burners</a>
+            <a href="Shop.html">Kitchen Chimney</a>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="About.html">About Us</a>
+            <a href="tech.html">Technologies</a>
+            <a href="cert.html">Certifications</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <p>Secured Payment Gateways</p>
+            <img src="./assets/pay.png">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>© 2023 Micropure Healthcare. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
